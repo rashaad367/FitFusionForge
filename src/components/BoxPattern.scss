@@ -1,0 +1,16 @@
+// Handles random big circles
+.bgcircle {
+    background-color: #C17401;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+@for $i from 1 through 3 {
+    .bgcircle:nth-child(#{$i}) {
+        top: random(1000) + px;
+        left: random(1000) + px;
+    }
+}
