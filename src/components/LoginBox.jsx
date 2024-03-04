@@ -3,8 +3,9 @@ import './LoginBox.css';
 
 function LoginBox() {
 
-    return (<><div className="box">
-        <h3>Login</h3>
+    return (<>
+        <div className="box">
+        <h3 className="login_header">Login</h3>
         <form action="" method="get">
             <div className="emailpassword">
                 <input type="email" name="" id="" placeholder="Email"/>
