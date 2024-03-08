@@ -3,7 +3,8 @@
     height: 400px;
     width: 375px;
     background-color: #5C4848;
-    margin: 30rem auto;
+    margin: 12.5% auto;
+    justify-content: center;
 }
 
 .login_header {
@@ -12,10 +13,12 @@
 
 .box h3 {
     text-align: center;
+    color:#FFFFFF
 }
 
 .box h6 {
     text-align: center;
+    color: #FFFFFF;
 }
 
 .emailpassword {
@@ -27,7 +30,7 @@
 
 input {
     margin: 1.5em 0;
-    background-color: #D9D9D9;
+    background-color: #FFFFFF;
     border: none;
     height: 2rem;
     width: 100%;

@@ -13,7 +13,7 @@ function LoginBox() {
             </div>
         </form>
         <h6>Don't have an account yet?</h6>
-        <a><h3>Sign up</h3></a>
+        <a href="#"><h3>Sign up</h3></a>
     </div></>)
 }
 

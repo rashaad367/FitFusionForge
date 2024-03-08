@@ -1,20 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useEffect, useState } from 'react'
 import './App.scss';
-import LoginBox from './components/LoginBox';
-import BoxPattern from './components/BoxPattern';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import ProfileInfo from './pages/ProfileInfo';
+import WorkoutCreator from './pages/WorkoutCreator';
+import NoPage from './pages/NoPage';
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <BoxPattern></BoxPattern>
- 
-       <LoginBox></LoginBox>
-     
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/profileinfo" element={<ProfileInfo />} />
+          <Route path="/workoutcreator" element={<WorkoutCreator />} />
+          <Route path="*" element={<NoPage/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
